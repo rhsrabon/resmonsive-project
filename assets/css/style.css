@@ -1,0 +1,420 @@
+ @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Nunito:wght@200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+/*global css*/
+body{
+	font-family: 'Lato', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+/* .no-paading{
+	padding: 0;
+	display:;
+} */
+/*heder section*/
+.header-section{
+	padding: 25px;
+}
+.header-section img{
+
+}
+
+/*banner section*/
+.banner-section{
+	background: url(../img/banner.jpg) no-repeat center;
+	background-size: cover;
+	text-align: center;
+	padding: 180px 0;
+	position: relative;
+	
+}
+.banner-section h1{
+	color: #fff;
+	font-size: 120px;
+	font-weight: 500;
+
+}
+
+.banner-section .title-border{
+	padding: 2px;
+	margin: 0 auto 12px;
+	background: #15a4fa;
+	width: 63%;
+
+}
+
+.banner-section p{
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 25px;
+
+}
+
+.banner-section .banner-btn{
+	color: #fff;
+	text-decoration: none;
+	padding: 12px;
+	border: 2px solid #15a4fa;
+	border-radius: 5px;
+	transition: all .3s ease-in-out;
+
+}
+.banner-section a:hover{
+	background: #15a4fa; 
+}
+.banner-section ul{
+	padding: 0;
+}
+.banner-section ul li{
+	list-style: none;
+}
+.banner-section .fa-chevron-down{
+	position: absolute;
+	top: 89%;
+	font-size: 35px;
+	color: #fff;
+	margin-left: -20px;
+}
+
+
+/*about section*/
+.about-section{
+	background: #f6f9f9;
+	padding: 40px;
+
+}
+
+.about-section h2{
+	color: #2d3950;
+	text-align: center;
+	font-size: 40px;
+}
+
+.about-section p{
+	text-align: center;
+	color: #a7a8a8;
+	font-size: 20px;
+
+}
+
+/*feature section*/
+
+.feature-section{
+	padding: 43px;
+}
+
+.feature-section img{
+	margin: 0 auto;
+	display: block;
+
+
+}
+
+.feature-section h4{
+	text-align: center;
+	margin-top: 12px;
+	color: #2d3950;
+	font-size: 22px;
+
+}
+
+.feature-section p{
+	text-align: center;
+	color: #a0a0a0;
+	font-size: 15px;
+}
+
+/*portfolio section*/
+.portfolio{
+	background: #f6f9f9;
+	padding: 75px;
+}
+.portfolio h2{
+	text-align: center;
+	color: #2d3950;
+	font-size: 42px;
+	font-weight: 500;
+
+}
+.portfolio p{
+	text-align: center;
+	padding-bottom: 40px;
+	color: #909090;
+	font-size: 20px; 
+	line-height: 27px;
+
+}
+.portfolio-item{
+	margin-bottom: 26px;
+
+}
+.item-img{
+	width: 100%;
+	height: auto;
+
+}
+.item{
+	position: relative;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+	overflow: hidden;
+}
+.item-hover{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: -100%;
+	background: rgba(44,172,247,.8);
+	transition: all .3s ease-in-out;
+	
+}
+.item:hover .item-hover{
+	left: 0;
+}
+.item-hover ul{
+	padding: 0;
+	text-align: center;
+    margin-top: 30%;
+}
+.item-hover ul li{
+	list-style: none;
+	display: inline;
+	margin: 0 8px;
+
+}
+.item-hover ul li a .fa{
+	color: white;
+	font-size: 22px;
+	width: 45px;
+	height: 45px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	line-height: 45px;
+	text-align: center;
+}
+
+/*contact section*/
+.contact-section h3{
+	font-size: 40px;
+	color: #fff;
+	margin-bottom: 0px;
+
+}
+.contact-section p{
+	color: #999999;
+	font-size: 15px
+}
+.contact-section .form-input{
+	display: block;
+	margin: 16px auto;
+	padding: 18px;
+	border: 1px solid #9999;
+	box-shadow: none;
+	background: rgba(0,0,0,0);
+	color: #fff;
+	outline: none;
+	font-size: 18px;
+	width: 100%;
+}
+.contact-section textarea{
+	display: block;
+	margin: 16px auto;
+	padding: 18px;
+	border: 1px solid #9999;
+	box-shadow: none;
+	background: rgba(0,0,0,0);
+	color: #fff;
+	outline: none;
+	font-size: 18px;
+	width: 100%
+}
+.contact-section .check-box{
+	margin: 23px 0;
+	display: inline-block;
+	float: left;
+}
+.contact-section .check-box .checkbox-input{
+	border: 1px solid #999;
+	border-radius: 4px;
+	box-shadow: none;
+	outline: none;
+	cursor: pointer;
+
+}
+.contact-section .check-box label{
+	color: #efefef;
+	padding: 0 7px;
+}
+.contact-section form .send-btn{
+	background: rgba(0,0,0,0);
+	float: right;
+	float: right;
+	margin: 15px 0;
+	padding: 10px 44px;
+	border: 1px solid #15a4fa;
+	border-radius: 7px;
+	outline: none;
+	font-size: 18px;
+	color: #fff; 
+	transition: all .3s ease-in-out;
+}
+.contact-section form .send-btn:hover{
+	background:  #15a4fa;
+}
+.contact-section{
+	position: relative;
+	background: url(../img/fotter.jpg) no-repeat center;
+	background-size: cover;
+	padding: 80px 0 92px;
+	color: #fff;
+	z-index: 1;
+	text-align: center;
+	
+}
+.contact-section::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(46,56,78,.8);
+	z-index: -1;
+}
+
+/*fotter*/
+.footer-section{
+	padding: 25px 0;
+
+}
+.footer-section p{
+	color: #80998e;
+}
+.footer-section ul{
+	padding: 0;
+
+}
+.footer-section ul li{
+	list-style: none;
+	display: inline-block;
+
+}
+.footer-section ul li a{
+	text-decoration: none;
+}
+.footer-section ul li a img{
+	position: relative;
+	transition: all .3s ease-in-out;
+
+}
+.footer-section ul li a img:hover{
+	transform: rotate(-20deg);
+}
+.footer-section ul li a .fa-brands{
+	color: #0c0b0b;
+	position: absolute;
+}
+
+
+
+@media(max-width:576px){
+	.header-section img {
+		width: 96px;
+	}
+	.header-section {
+		padding: 10px;
+	}
+	.banner-section{
+		padding: 122px 0;
+	}
+	.banner-section h1 {
+		font-size: 49px;
+	}
+	.banner-section .title-border {
+		padding: 1px;
+		margin: 0 auto 6px;
+		width: 60%;
+	}
+	.banner-section p {font-size: 16px;
+		margin-bottom: 18px;
+		line-height: 16px;
+		padding: 0 7px 0 0px;
+	}
+	.banner-section .banner-btn { 
+		padding: 7px; 
+		border: 2px solid #15a4fa;
+	}
+	.banner-section .fa-chevron-down {
+		top: 73%;
+		font-size: 29px; 
+		margin-left: -14px;
+	}
+	.about-section {
+		padding: 6px 24px 0px 0;
+	}
+	.about-section h2 {
+		font-size: 28px;
+	}
+	.about-section p {
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.feature-section {
+		padding: 16px;
+	}
+	.feature-section img {
+		width: 22%;
+	}
+	.feature-section h4 { 
+		margin-top: 5px;
+		font-size: 20px;
+	}
+	.portfolio {
+		padding: 5px 0 0 0;
+	}
+
+	.portfolio h2 {
+		font-size: 25px;
+	}
+	.portfolio p {
+		padding-bottom: 15px;
+		font-size: 16px;
+		line-height: 18px;
+		}
+	.portfolio-item {
+		margin-bottom: 26px;padding: 0;
+	}
+	.contact-section{
+		padding: 16px 0 25px;
+	}
+	.contact-section h3 {
+		font-size: 27px;
+	}
+	.contact-section .form-input{
+		margin: 14px auto;
+		padding: 8px;
+		font-size: 16px;
+	}
+	.contact-section .check-box {
+		margin: 3px 0;
+	}
+	label {
+		font-size: 14px;
+	}
+	.contact-section form .send-btn {
+		margin: 2px 0;
+		font-size: 16px;
+		padding: 6px 30px;
+	}
+	.footer-section {
+		padding: 9px 0;
+	}
+	.footer-section p {
+		text-align: center;
+	}
+	.footer-section ul {
+		text-align: center;
+	}
+}
